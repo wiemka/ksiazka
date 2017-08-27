@@ -24,10 +24,12 @@ function iloscPrzeczytanych(ksiazki) {
     //dlaczego tu odnosimy się do tworzonych ksiazki, a nie do tablica
     //console.log("test");
     for (var i = 0; i < ksiazki.length; i++) {
-        if (ksiazki.przeczytana) {
+        ksiazki[i].opiszKsiazke();
+        if (ksiazki[i].przeczytana) {
             przeczytaneKsiazki++;
         }
     }
+    return przeczytaneKsiazki;
 }
 
 var ksiazka1 = new Ksiazka("Wiedzmin", "Sapkowski", true);
@@ -38,4 +40,4 @@ var tablica = [ksiazka1, ksiazka2, ksiazka3];
 
 //console.log(tablica);
 
-iloscPrzeczytanych(tablica);
+console.log("Ilość przeczytanych książek: " + iloscPrzeczytanych(tablica));
