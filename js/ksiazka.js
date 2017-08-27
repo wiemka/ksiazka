@@ -17,3 +17,11 @@ class Ksiazka {
         console.log(text);
     }
 }
+
+var ksiazka1 = new Ksiazka("Wiedzmin", "Sapkowski", true);
+var ksiazka2 = new Ksiazka("Pan Tadeusz", "Mickiewicz", true);
+var ksiazka3 = new Ksiazka("50 twarzy Greya", "James", false);
+
+var tablica = [ksiazka1, ksiazka2, ksiazka3];
+
+console.log(tablica);
